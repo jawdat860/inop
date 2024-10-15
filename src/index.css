@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* In your main CSS file (e.g., App.css) */
+
+
+@layer utilities {
+  .duration-high {
+    @apply transition-all duration-300 ease-in-out;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spin {
+  animation: spin 40s linear infinite;
+}
+.uniform-images {
+  width: 200px; /* Set your desired width */
+  height: 150px; /* Set your desired height */
+  object-fit: cover; /* This ensures the images cover the area without distortion */
+}
+
+body{
+  overflow-x: hidden;
+
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+ 
+}
+/* In your CSS file */
+.dark {
+  background: #403B4A;  /* Fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E7E9BB, #403B4A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.light {
+  background: #ff6e7f;  /* Fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #bfe9ff, #ff6e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.tgui-5dc6ad1ca3ac3ed4{
+  flex: 1;
+  background-color: white;
+  border-radius: 43px 43px 0 0;
+}
+
+/* CSS */
+.button-85 {
+  padding: 10px 10px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.box{
+  box-shadow: 0px -5px 10px 2px #595d64;
+}
+.images-wrap{
+  padding-left: 73px;
+}
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.tgui-f67c8fb3553eee55{
+  padding: 10px !important;
+}
+.tgui-f67c8fb3553eee55:before   {
+background: white !important;  
+}
+.tgui-3197096cb603b35a{
+  background: #21212196 !important;  
+  z-index: 100 !important;
+}
+.tgui-cc76354712c6e8d9 {
+  z-index: 200 !important;
+ border-radius: 20px;
+}
+.tgui-5dc6ad1ca3ac3ed4{
+  display: flex;
+  height: 100%;
+}
+.tgui-e5c3a5b87f8b1f46{
+  width: 100%;
+}
+.tgui-5dc6ad1ca3ac3ed4{
+  flex-direction:column
+}
+

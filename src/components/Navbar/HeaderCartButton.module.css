@@ -1,0 +1,63 @@
+
+
+.badge {
+    position: absolute;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+    background-color: #b94517; /* Badge color */
+    width:   20px;
+    height: 20px;   /* Padding for the badge */
+    border-radius: 100%; /* Rounded corners */
+    /* Space between button and badge */
+     top: -6px;
+     right: 39%;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    color: white; /* Text color for the badge */
+}
+.badgee {
+    position: absolute;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+    background-color: #b94517; /* Badge color */
+    width:   20px;
+    height: 20px;   /* Padding for the badge */
+    border-radius: 100%; /* Rounded corners */
+    /* Space between button and badge */
+     top: -14px;
+     right: 0%;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    color: white; /* Text color for the badge */
+}
+
+.button:hover .badge,
+.button:active .badge {
+    background-color: #92320c; /* Darker badge color on hover/active */
+}
+.button:hover .badgee,
+.button:active .badgee {
+    background-color: #92320c; /* Darker badge color on hover/active */
+}
+
+.bump {
+    animation: bump 300ms ease-out; /* Bump animation on certain interactions */
+}
+
+@keyframes bump {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.9);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
